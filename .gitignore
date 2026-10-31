@@ -1,0 +1,34 @@
+
+# Keil µVision generated build files
+Objects/
+Listings/
+*.o
+*.d
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lnp
+
+# Keil personal workspace and debugger settings
+*.uvguix.*
+*.uvoptx
+
+# Generated build and listing reports
+prac.build_log.htm
+prac.htm
+
+# Backup and temporary files
+*.bak
+*.tmp
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
