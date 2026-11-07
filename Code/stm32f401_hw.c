@@ -90,7 +90,7 @@ void spi1_init_for_mcp2515(void) {
     // SPI1: master, SW NSS, CPOL=0, CPHA=0, fPCLK/16
     SPI1->CR1 = 0;
     SPI1->CR1 |= SPI_CR1_MSTR;
-    SPI1->CR1 |= SPI_CR1_SSM | SPI_CR1_SSI; // BEPP: this ensures that we can use software to controll the selection of SPI
+    SPI1->CR1 |= SPI_CR1_SSM | SPI_CR1_SSI;
     SPI1->CR1 |= SPI_CR1_BR_1 | SPI_CR1_BR_0; // /16
 
     SPI1->CR1 |= SPI_CR1_SPE;
