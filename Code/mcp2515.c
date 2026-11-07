@@ -63,18 +63,20 @@
 #define EFLG_EWARN           (1u << 0) ////////////////
 
 
+// Active low for selection MCP slave
 static void mcp_select(void) {
-    mcp2515_cs_low();
+    mcp2515_cs_low(); 
 }
-
 static void mcp_deselect(void) {
     mcp2515_cs_high();
 }
 
+
+// Read the data from a register
 static uint8_t mcp_read_reg(uint8_t addr) {
-    mcp_select();
-    spi1_transfer(MCP_READ);
-    spi1_transfer(addr);
+    mcp_select(); 
+    spi1_transfer(MCP_READ); // transfer the READ command
+    spi1_transfer(addr); // register addr
     uint8_t v = spi1_transfer(0xFF);
     mcp_deselect();
     return v;

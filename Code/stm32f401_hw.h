@@ -2,7 +2,7 @@
 #define STM32F401_HW_H
 
 #include <stdint.h>
-#include "stm32f401xe.h"
+#include "stm32f4xx.h"
 
 void clock_init_minimal(void);
 void systick_init_1ms(void);
