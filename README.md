@@ -1,6 +1,6 @@
-V-TRAC STM32F401CCU6 – Keil µVision Setup Instructions
+# V-TRAC STM32F401CCU6 – Keil µVision Setup Instructions
 
-Instructions:
+### Instructions:
 
 1. Create a new project in Keil µVision for the target device:
    STM32F401CCUx
