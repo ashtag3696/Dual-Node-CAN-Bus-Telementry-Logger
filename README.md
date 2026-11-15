@@ -1,4 +1,4 @@
-# V-TRAC STM32F401CCU6 – Keil µVision Setup Instructions
+# Dual Node CAN-BUS telemetry Logger using STM32F401CCU6 – Keil µVision Setup Instructions
 
 ### Instructions:
 
